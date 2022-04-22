@@ -1,15 +1,15 @@
-////
-////  TransactionImageView.swift
-////  LearningTask-6.2
-////
-////  Created by rafael.rollo on 19/04/2022.
-////
 //
-//import UIKit
+//  TransactionImageView.swift
+//  LearningTask-6.2
 //
-//@IBDesignable class TransactionImageView: UIView {
-//    // MARK: - Configuration support
-//    
+//  Created by rafael.rollo on 19/04/2022.
+//
+
+import UIKit
+
+@IBDesignable class TransacaoImageView: UIView {
+    // MARK: - Configuration support
+    
 //    private static var baseDimension: CGFloat = 48
 //    
 //    private var baseColor: UIColor {
@@ -108,4 +108,4 @@
 //            imageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
 //        ])
 //    }
-//}
+}
