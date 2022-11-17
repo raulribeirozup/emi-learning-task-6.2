@@ -16,7 +16,13 @@
 		584E2E74280EFDFD0039B1FF /* TransacaoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E73280EFDFD0039B1FF /* TransacaoImageView.swift */; };
 		584E2E7B280F2B4E0039B1FF /* ContasAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E7A280F2B4E0039B1FF /* ContasAPI.swift */; };
 		584E2E85280F53830039B1FF /* Custom+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E84280F53830039B1FF /* Custom+UIColor.swift */; };
-		584E2E9028105E480039B1FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E8F28105E480039B1FF /* ViewController.swift */; };
+		584E2E9028105E480039B1FF /* ContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E8F28105E480039B1FF /* ContaViewController.swift */; };
+		B784163A292568C000919B18 /* TransacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7841639292568C000919B18 /* TransacaoTableViewCell.swift */; };
+		B784163D29256C5C00919B18 /* Transacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784163C29256C5C00919B18 /* Transacao.swift */; };
+		B784163F2925701200919B18 /* CustomPatterns+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784163E2925701200919B18 /* CustomPatterns+DateFormatter.swift */; };
+		B78416412925712E00919B18 /* Currency+NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78416402925712E00919B18 /* Currency+NumberFormatter.swift */; };
+		B7841643292575A300919B18 /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7841642292575A300919B18 /* Conta.swift */; };
+		B784164629257A3300919B18 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784164529257A3300919B18 /* SectionTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +37,13 @@
 		584E2E73280EFDFD0039B1FF /* TransacaoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacaoImageView.swift; sourceTree = "<group>"; };
 		584E2E7A280F2B4E0039B1FF /* ContasAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContasAPI.swift; sourceTree = "<group>"; };
 		584E2E84280F53830039B1FF /* Custom+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+UIColor.swift"; sourceTree = "<group>"; };
-		584E2E8F28105E480039B1FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		584E2E8F28105E480039B1FF /* ContaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaViewController.swift; sourceTree = "<group>"; };
+		B7841639292568C000919B18 /* TransacaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacaoTableViewCell.swift; sourceTree = "<group>"; };
+		B784163C29256C5C00919B18 /* Transacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transacao.swift; sourceTree = "<group>"; };
+		B784163E2925701200919B18 /* CustomPatterns+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomPatterns+DateFormatter.swift"; sourceTree = "<group>"; };
+		B78416402925712E00919B18 /* Currency+NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Currency+NumberFormatter.swift"; sourceTree = "<group>"; };
+		B7841642292575A300919B18 /* Conta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
+		B784164529257A3300919B18 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 				584E2E66280DC3510039B1FF /* Assets.xcassets */,
 				584E2E89280F57DE0039B1FF /* Common */,
 				584E2E8E280F5B160039B1FF /* API */,
+				B784163B29256C2E00919B18 /* Models */,
 				584E2E88280F576D0039B1FF /* View */,
 				584E2E8A280F58290039B1FF /* Scenes */,
 			);
@@ -88,6 +101,7 @@
 		584E2E88280F576D0039B1FF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B784164429257A1000919B18 /* Components */,
 				584E2E63280DC34F0039B1FF /* Main.storyboard */,
 			);
 			path = View;
@@ -104,7 +118,7 @@
 		584E2E8A280F58290039B1FF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				584E2E8F28105E480039B1FF /* ViewController.swift */,
+				584E2E8F28105E480039B1FF /* ContaViewController.swift */,
 				584E2E8B280F58600039B1FF /* Conta */,
 			);
 			path = Scenes;
@@ -122,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				584E2E84280F53830039B1FF /* Custom+UIColor.swift */,
+				B784163E2925701200919B18 /* CustomPatterns+DateFormatter.swift */,
+				B78416402925712E00919B18 /* Currency+NumberFormatter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -131,6 +147,7 @@
 			children = (
 				584E2E71280DCC4C0039B1FF /* TableHeaderView.swift */,
 				584E2E73280EFDFD0039B1FF /* TransacaoImageView.swift */,
+				B7841639292568C000919B18 /* TransacaoTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -141,6 +158,23 @@
 				584E2E7A280F2B4E0039B1FF /* ContasAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		B784163B29256C2E00919B18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B784163C29256C5C00919B18 /* Transacao.swift */,
+				B7841642292575A300919B18 /* Conta.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B784164429257A1000919B18 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B784164529257A3300919B18 /* SectionTitle.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,10 +250,16 @@
 			files = (
 				584E2E74280EFDFD0039B1FF /* TransacaoImageView.swift in Sources */,
 				584E2E72280DCC4C0039B1FF /* TableHeaderView.swift in Sources */,
+				B784163D29256C5C00919B18 /* Transacao.swift in Sources */,
+				B7841643292575A300919B18 /* Conta.swift in Sources */,
 				584E2E7B280F2B4E0039B1FF /* ContasAPI.swift in Sources */,
+				B78416412925712E00919B18 /* Currency+NumberFormatter.swift in Sources */,
 				584E2E85280F53830039B1FF /* Custom+UIColor.swift in Sources */,
-				584E2E9028105E480039B1FF /* ViewController.swift in Sources */,
+				584E2E9028105E480039B1FF /* ContaViewController.swift in Sources */,
+				B784163F2925701200919B18 /* CustomPatterns+DateFormatter.swift in Sources */,
+				B784164629257A3300919B18 /* SectionTitle.swift in Sources */,
 				584E2E5E280DC34F0039B1FF /* AppDelegate.swift in Sources */,
+				B784163A292568C000919B18 /* TransacaoTableViewCell.swift in Sources */,
 				584E2E60280DC34F0039B1FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
